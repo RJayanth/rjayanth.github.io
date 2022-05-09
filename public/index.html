@@ -31,12 +31,31 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <!-- particles.js container -->
     <div id="particles-js">
-      <div id="root"></div>
+      <div class="parent">
+        <div class="child">
+          <h1>Welcome, I'm <span class="auto-type"> </span> </h1>
+        </div>
+      </div>
     </div>
+    <div id="root"></div>
+
 
     <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="particles/particles.js"></script>
     <script src="particles/app.js"></script>
+    <script>
+      var options = {
+        strings: ['', 'Jayanth R', 'a front-end web devloper'],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+        onStringTyped: (arrayPos, self) => {
+          console.log(arrayPos, self);
+        }
+      };
+      var typed = new Typed('.auto-type', options);
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
