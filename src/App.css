@@ -23,6 +23,10 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .component-JR {
+    width: 100px !important;
+  }
 }
 
 .credits-component {
