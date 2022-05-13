@@ -1,4 +1,60 @@
 .App {
   background-color: white;
-  height: 100%;
+}
+
+.flex-container1, .flex-container2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container1, .flex-container2 {
+  flex-direction: row;
+  align-items: center;
+}
+
+/* .flex-container2 {
+  flex-direction: row;
+  justify-content: center;
+} */
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container2 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.credits-component {
+  justify-content: center;
+}
+
+.thank-you-component{
+  justify-content: left;
+  font-size: xx-large;
+  flex: 4;
+  margin: 2%;
+
+}
+.img-responsive {
+  width: 60%;
+  height: 60%;
+}
+
+hr{
+  display: block;
+  border: 200px;
+  border-top: 2px solid #131111;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: rgb(57 53 53);
+  margin: 1em 0;
+  padding: 0;
+  width: 50%;
+}
+
+h1{
+  font-family: brush-script-std, sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
 }
