@@ -4,6 +4,7 @@ import './App.css';
 import CreditsComponent from './components/CreditsComponent/CreditsComponent';
 import ThankYouComponent from './components/ThankYouComponent/ThankYouComponent';
 import { ContactMeComponent } from './components/ContactMeComponent/ContactMeComponent';
+import SociaMedicaComponents from './components/SociaMedicaComponents/SociaMedicaComponents';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
       </div>
       <div className="flex-container3">
         <ContactMeComponent />
+      </div>
+      <div className="flex-container4">
+        <SociaMedicaComponents />
       </div>
       
     </div>

@@ -1,8 +1,7 @@
 export function ContactMeComponent () {
     return(
         <div className="contact-me-component">
-            <p> Get in touch </p>
-            <i class="fa-solid fa-user"></i>
+            <p className="contact-me-header"> Get in touch </p>
         </div>
     )
 }
