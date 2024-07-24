@@ -55,8 +55,8 @@ const ModeToggle = () => {
   const { isDarkTheme } = useThemeContext();
   return (
     <FormControlLabel
-      control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
-      label={`${isDarkTheme ? 'Dark' : 'Light'} Mode`}
+      control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked={isDarkTheme} />}
+      // label={`${isDarkTheme ? 'Dark' : 'Light'} Mode`}
     />
   );
 };

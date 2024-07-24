@@ -3,17 +3,14 @@
 
     .dp-icon {
         width: fit-content;
-        position: absolute;
-        top: 20%;
-        left: 70%;
         height: 200px;
         width: 200px;
         border-radius: 50%;
     }
 }
 
-@media (max-width: 1024px) {
-    .display-pic-container {
-        display: none;
-    }
-}
+// @media (max-width: 1024px) {
+//     .display-pic-container {
+//         display: none;
+//     }
+// }

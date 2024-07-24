@@ -6,6 +6,7 @@ import jsIcon from '../../assets/images/jsIcon.svg';
 import reactIcon from '../../assets/images/reactIcon.svg';
 import reduxIcon from '../../assets/images/reduxIcon.svg';
 import debugIcon from '../../assets/images/debugIcon.svg';
+import skillsLogo from '../../assets/images/skillsLogo.png';
 import { useThemeContext } from '../../themes';
 
 import './index.scss';
@@ -15,6 +16,10 @@ const SkillsComponent = () => {
   return (
     <div className="skills-container">
       <div className="skills-header"> KEY SKILLS </div>
+      <div>
+        <img className='skills-logo' src={skillsLogo} />
+      </div>
+      
       <div className="skills-icon-container">
         <div>
           <img
