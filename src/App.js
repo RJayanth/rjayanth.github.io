@@ -9,8 +9,14 @@ import Dashboard from './Pages/Dashboard';
 import ThemeWrapper from './themes';
 import Test from './test';
 import Loader from './commons/Loader';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setIsLoading(false), 500);
+  }, []);
   return (
     <div className="App">
       {/* <div className="flex-container1">
@@ -28,8 +34,7 @@ function App() {
         <SociaMedicaComponents />
       </div> */}
       <ThemeWrapper>
-        <Dashboard />
-        {/* <Test /> */}
+        {isLoading ? <Loader /> : <Dashboard />}
       </ThemeWrapper>
     </div>
   );
