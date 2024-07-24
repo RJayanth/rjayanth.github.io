@@ -32,9 +32,7 @@ function App() {
       <div className="flex-container4">
         <SociaMedicaComponents />
       </div> */}
-      <ThemeWrapper>
-        {isLoading ? <Loader /> : <Dashboard />}
-      </ThemeWrapper>
+      {isLoading ? <Loader /> : <Dashboard />}
     </div>
   );
 }

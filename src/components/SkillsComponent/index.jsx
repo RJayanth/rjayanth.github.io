@@ -1,4 +1,3 @@
-import useThemeChange from '../../hooks/useThemeChange';
 import htmlIcon from '../../assets/images/htmlIcon.svg';
 import htmlIconDark from '../../assets/images/htmlIconDark.svg';
 import cssIcon from '../../assets/images/cssIcon.svg';
@@ -7,9 +6,10 @@ import jsIcon from '../../assets/images/jsIcon.svg';
 import reactIcon from '../../assets/images/reactIcon.svg';
 import reduxIcon from '../../assets/images/reduxIcon.svg';
 import debugIcon from '../../assets/images/debugIcon.svg';
+import { useThemeContext } from '../../themes';
 
 const SkillsComponent = () => {
-  const { isDarkTheme } = useThemeChange();
+  const { isDarkTheme } = useThemeContext();
   return (
     <div className="skills-container">
       <div className="skills-header"> KEY SKILLS </div>
