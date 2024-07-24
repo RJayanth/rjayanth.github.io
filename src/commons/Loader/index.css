@@ -75,3 +75,9 @@
       transform: translate(0, -1em) rotate(-225deg);
     }
   }
+
+  @media (prefers-color-scheme: dark) {
+    .hill, .box {
+        border-color: white;
+    }
+  }
