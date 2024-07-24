@@ -48,18 +48,13 @@
       </div>
       <div id="root"></div>
     </div>
-    <script></script>
-
-    <!-- scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="particles/particles.js"></script>
-    <script src="particles/app.js"></script>
-
-    <!-- <audio id="typingAudio" controls autoplay>
-      <source src="typing.mp3" type="audio/mpeg">
-    </audio> -->
-
     <script>
+      function loadScript(src, callback) {
+        var script = document.createElement('script');
+        script.src = src;
+        script.onload = callback;
+        document.head.appendChild(script);
+      }
       window.addEventListener('load', function () {
         var loader = document.getElementById('loader');
         var content = document.getElementById('content');
@@ -68,6 +63,10 @@
         setTimeout(function () {
           loader.style.display = 'none';
           content.style.display = 'block';
+          loadScript('particles/particles.js', function () {
+            loadScript('particles/app.js');
+          });
+          // console.log(loadParticles);
           var audioPlayedCount = 0;
           // function playTypingSound() {
           //   const el = document.getElementById('typingAudio');
@@ -87,9 +86,18 @@
             // },
           };
           new Typed('.auto-type', options);
-        }, 100);
+        }, 2000);
       });
     </script>
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="particles/particles.js"></script>
+    <script src="particles/app.js"></script>
+
+    <!-- <audio id="typingAudio" controls autoplay>
+      <source src="typing.mp3" type="audio/mpeg">
+    </audio> -->
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
