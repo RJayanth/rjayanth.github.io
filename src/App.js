@@ -7,7 +7,6 @@ import { ContactMeComponent } from './components/ContactMeComponent/ContactMeCom
 import SociaMedicaComponents from './components/SociaMedicaComponents/SociaMedicaComponents';
 import Dashboard from './Pages/Dashboard';
 import ThemeWrapper from './themes';
-import Test from './test';
 import Loader from './commons/Loader';
 import { useEffect, useState } from 'react';
 
