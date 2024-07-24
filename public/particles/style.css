@@ -36,10 +36,16 @@ html{
 
 body{
   font:normal 75% Arial, Helvetica, sans-serif;
+  height: 100%;
+  overflow-y: auto;
 }
 
 #root {
-  height: 100%;
+  height: 50%;
+}
+.welome-message-title {
+  font-weight: 800;
+  font-size: xx-large;
 }
 
 canvas{
@@ -106,7 +112,6 @@ canvas{
 }
 
 .child {
-  margin: 0px 0 0 0;
   position: absolute;
   top: 25%;
   text-align: center;
@@ -114,7 +119,7 @@ canvas{
   transform: translateY(-50%);
   color: aliceblue;
   font-size: x-large;
-  margin-left: 10%;
+  margin: 0 5%;
 }
 
 .self-text {

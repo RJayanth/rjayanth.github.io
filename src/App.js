@@ -5,6 +5,10 @@ import CreditsComponent from './components/CreditsComponent/CreditsComponent';
 import ThankYouComponent from './components/ThankYouComponent/ThankYouComponent';
 import { ContactMeComponent } from './components/ContactMeComponent/ContactMeComponent';
 import SociaMedicaComponents from './components/SociaMedicaComponents/SociaMedicaComponents';
+import Dashboard from './Pages/Dashboard';
+import ThemeWrapper from './themes';
+import Test from './test';
+import Loader from './commons/Loader';
 
 function App() {
   return (
@@ -13,17 +17,20 @@ function App() {
       <ThankYouComponent/>
       <hr></hr>
       </div> */}
-      <div className="flex-container2">
+      {/* <div className="flex-container2">
         <ThankYouComponent/>
         <CreditsComponent/>
-      </div>
-      <div className="flex-container3">
+      </div> */}
+      {/* <div className="flex-container3">
         <ContactMeComponent />
       </div>
       <div className="flex-container4">
         <SociaMedicaComponents />
-      </div>
-      
+      </div> */}
+      <ThemeWrapper>
+        <Dashboard />
+        {/* <Test /> */}
+      </ThemeWrapper>
     </div>
   );
 }
