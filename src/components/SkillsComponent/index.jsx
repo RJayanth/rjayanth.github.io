@@ -11,17 +11,15 @@ const SkillsComponent = () => {
     return (
         <div className="skills-container">
         <div className="skills-header"> KEY SKILLS </div>
-        <div class="skills-icon-container">
+        <div className="skills-icon-container">
           <div>
             <img
-              fetchPriority="high"
               src={isDarkTheme ? htmlIcon : htmlIcon}
               alt="logo"
               className="skills-icon"
             />
           </div>          <div>
             <img
-              fetchPriority="high"
               src={isDarkTheme ? cssIcon : cssIcon}
               alt="logo"
               className="skills-icon"
@@ -29,7 +27,6 @@ const SkillsComponent = () => {
           </div>
           <div>
             <img
-              fetchPriority="high"
               src={isDarkTheme ? jsIcon : jsIcon}
               alt="logo"
               className="skills-icon"
@@ -37,7 +34,6 @@ const SkillsComponent = () => {
           </div>
           <div>
             <img
-              fetchPriority="high"
               src={isDarkTheme ? reactIcon : reactIcon}
               alt="logo"
               className="skills-icon"
@@ -45,7 +41,6 @@ const SkillsComponent = () => {
           </div>
           <div>
             <img
-              fetchPriority="high"
               src={isDarkTheme ? reduxIcon : reduxIcon}
               alt="logo"
               className="skills-icon"
@@ -53,7 +48,6 @@ const SkillsComponent = () => {
           </div>
           <div title='Debugging'>
             <img
-              fetchPriority="high"
               src={isDarkTheme ? debugIcon : debugIcon}
               alt="logo"
               className="skills-icon"

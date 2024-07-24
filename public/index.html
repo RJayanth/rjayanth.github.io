@@ -5,13 +5,13 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created by Jayanth R"
-    />
-    <link rel="stylesheet" media="screen" href="particles/style.css">
+    <meta name="description" content="Web site created by Jayanth R" />
+    <link rel="stylesheet" media="screen" href="particles/style.css" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -31,45 +31,64 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <!-- particles.js container -->
-    <div id="particles-js">
-      <div class="parent">
-        <div class="child">
-          <h1 class="welome-message-title">HELLO & WELCOME, I'm <span class="auto-type" allow="autoplay"> </span> </h1>
+    <div class="loader" id="loader">
+      <div class="box"></div>
+      <div class="hill"></div>
+    </div>
+    <div id="content">
+      <div id="particles-js">
+        <div class="parent">
+          <div class="child">
+            <h1 class="welome-message-title">
+              HELLO & WELCOME, I'm
+              <span class="auto-type" allow="autoplay"> </span>
+            </h1>
+          </div>
         </div>
       </div>
+      <div id="root"></div>
     </div>
-    <div id="root"></div>
-
+    <script></script>
 
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="particles/particles.js"></script>
     <script src="particles/app.js"></script>
-    
+
     <!-- <audio id="typingAudio" controls autoplay>
       <source src="typing.mp3" type="audio/mpeg">
     </audio> -->
 
     <script>
-      var audioPlayedCount = 0;
-      // function playTypingSound() {
-      //   const el = document.getElementById('typingAudio');
-      //   audioPlayedCount++;
-      //   console.log('autoplay count', audioPlayedCount);
-      // }
-      var options = {
-        strings: ['', 'JAYANTH R', 'a Front-end Dev'],
-        typeSpeed: 50,
-        backSpeed: 50,
-        loop: true,
-        loopCount: 1,
-        // onStringTyped: () => {
-        //   if (audioPlayedCount <= 1){
-        //     playTypingSound();
-        //   }
-        // },
-      };
-      new Typed('.auto-type', options);
+      window.addEventListener('load', function () {
+        var loader = document.getElementById('loader');
+        var content = document.getElementById('content');
+
+        // Hide the loader and show the content
+        setTimeout(function () {
+          loader.style.display = 'none';
+          content.style.display = 'block';
+          var audioPlayedCount = 0;
+          // function playTypingSound() {
+          //   const el = document.getElementById('typingAudio');
+          //   audioPlayedCount++;
+          //   console.log('autoplay count', audioPlayedCount);
+          // }
+          var options = {
+            strings: ['', 'JAYANTH R', 'a Front-end Dev'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+            loopCount: 1,
+            // onStringTyped: () => {
+            //   if (audioPlayedCount <= 1){
+            //     playTypingSound();
+            //   }
+            // },
+          };
+          new Typed('.auto-type', options);
+        }, 100);
+      });
     </script>
     <!--
       This HTML file is a template.

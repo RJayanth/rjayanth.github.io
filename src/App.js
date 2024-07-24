@@ -15,7 +15,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setIsLoading(false), 500);
+    setIsLoading(false);
   }, []);
   return (
     <div className="App">
