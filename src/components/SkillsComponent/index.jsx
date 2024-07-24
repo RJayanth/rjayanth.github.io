@@ -8,6 +8,8 @@ import reduxIcon from '../../assets/images/reduxIcon.svg';
 import debugIcon from '../../assets/images/debugIcon.svg';
 import { useThemeContext } from '../../themes';
 
+import './index.scss';
+
 const SkillsComponent = () => {
   const { isDarkTheme } = useThemeContext();
   return (
