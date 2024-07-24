@@ -20,48 +20,54 @@ const SkillsComponent = () => {
         <img className='skills-logo' src={skillsLogo} />
       </div>
       
-      <div className="skills-icon-container">
-        <div>
+      <div className="skills-icons-container">
+        <div className='skill-icon-container'>
           <img
             src={isDarkTheme ? htmlIconDark : htmlIcon}
             alt="logo"
             className={`skills-icon ${isDarkTheme ? 'skills-icon-dark' : 'skills-icon-light' }`}
           />
+          <div className='skill-desc'>HTML</div>
         </div>
-        <div>
+        <div className='skill-icon-container'>
           <img
             src={isDarkTheme ? cssIconDark : cssIcon}
             alt="logo"
             className={`skills-icon ${isDarkTheme ? 'skills-icon-dark' : 'skills-icon-light' }`}
           />
+          <div className='skill-desc'>CSS</div>
         </div>
-        <div>
+        <div className='skill-icon-container'>
           <img
             src={isDarkTheme ? jsIcon : jsIcon}
             alt="logo"
             className={`skills-icon ${isDarkTheme ? 'skills-icon-dark' : 'skills-icon-light' }`}
           />
+          <div className='skill-desc'>Javascript</div>
         </div>
-        <div>
+        <div className='skill-icon-container'>
           <img
             src={isDarkTheme ? reactIcon : reactIcon}
             alt="logo"
             className={`skills-icon ${isDarkTheme ? 'skills-icon-dark' : 'skills-icon-light' }`}
           />
+          <div className='skill-desc'>React</div>
         </div>
-        <div>
+        <div className='skill-icon-container'>
           <img
             src={isDarkTheme ? reduxIcon : reduxIcon}
             alt="logo"
             className={`skills-icon ${isDarkTheme ? 'skills-icon-dark' : 'skills-icon-light' }`}
           />
+          <div className='skill-desc'>Redux</div>
         </div>
-        <div title="Debugging">
+        <div title="Debugging" className='skill-icon-container'>
           <img
             src={isDarkTheme ? debugIcon : debugIcon}
             alt="logo"
             className={`skills-icon ${isDarkTheme ? 'skills-icon-dark' : 'skills-icon-light' }`}
           />
+          <div className='skill-desc'>Debugging</div>
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@
     height: 100%;
   }
 
-  .skills-icon-container {
+  .skills-icons-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -36,6 +36,12 @@
     }
     .skills-icon-dark {
       box-shadow: rgb(212 195 195 / 88%) 0px 1px 4px;
+    }
+
+    .skill-icon-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
