@@ -6,7 +6,7 @@ import { useMediaQuery } from '@mui/material';
 const ThemeContext = createContext();
 
 export const ThemeContextProvider = ({ children }) => {
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const [isDarkTheme, setIsDarkTheme] = useState(prefersDarkMode);
 
   useEffect(() => {
