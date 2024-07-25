@@ -2,6 +2,8 @@ import './index.scss';
 import SkillsComponent from '../../components/SkillsComponent';
 import DarkModeToggle from '../../commons/DarkModeToggle';
 import AboutMeComponent from '../../components/AboutMeComponent';
+import ProjectsComponent from '../../components/ProjectsComponent';
+import WorkExperienceComponent from '../../components/WorkExperienceComponent';
 
 const Dashboard = () => {
   return (
@@ -9,6 +11,8 @@ const Dashboard = () => {
       <DarkModeToggle />
       <AboutMeComponent />
       <SkillsComponent />
+      <WorkExperienceComponent />
+      <ProjectsComponent />
     </div>
   );
 };

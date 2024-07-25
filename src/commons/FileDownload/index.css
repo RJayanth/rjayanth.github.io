@@ -1,0 +1,14 @@
+.resume-download {
+  display: flex;
+  width: fit-content;
+  background: #6b33ae;
+  padding: 8px;
+  cursor: pointer;
+  align-self: flex-end;
+  color: #fff;
+}
+
+.resume-text {
+  margin-right: 8px;
+  letter-spacing: 2px;
+}

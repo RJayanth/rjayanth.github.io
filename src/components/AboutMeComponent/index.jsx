@@ -2,6 +2,7 @@ import SectionHeadingText from "../../commons/SectionHeadingText";
 import { ABOUT_ME } from "../../constants";
 import { useThemeContext } from "../../themes";
 import DisplayPicture from "../DisplayPicture";
+import FileDownload from "../../commons/FileDownload";
 
 import './index.scss';
 
@@ -17,6 +18,7 @@ const AboutMeComponent = () => {
                 <p className="am-desc">{ABOUT_ME.EXPERIENCE}</p>
                 <p className="am-desc">{ABOUT_ME.ROLE}</p>
             </div>
+            <FileDownload />
         </div>
     )
 }
