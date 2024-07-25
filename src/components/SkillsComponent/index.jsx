@@ -17,7 +17,7 @@ const SkillsComponent = () => {
     <div className="skills-container">
       <div className="skills-header"> KEY SKILLS </div>
       <div>
-        <img className='skills-logo' src={skillsLogo} />
+        <img className='skills-logo' src={skillsLogo} alt='Skills Logo' />
       </div>
       
       <div className="skills-icons-container">

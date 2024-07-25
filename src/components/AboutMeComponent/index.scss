@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: 24px 24px;
-  padding: 2% 5%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 5% 5%;
 
   .am-heading {
     font-size: 24px;
@@ -13,7 +12,15 @@
 
   .am-description-container {
     .am-desc {
-        margin: 8px 0;
+        margin: 12px 0;
     }
   }
+}
+
+.am-dark {
+  box-shadow: rgb(244 244 245 / 25%) 0px 1px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.am-light {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
