@@ -10,13 +10,20 @@ import skillsLogo from '../../assets/images/skillsLogo.png';
 import { useThemeContext } from '../../themes';
 
 import './index.scss';
+import { elementOnScrollObserver } from '../../utils';
+import { useEffect } from 'react';
+import SectionHeadingText from '../../commons/SectionHeadingText';
 
 const SkillsComponent = () => {
   const { isDarkTheme } = useThemeContext();
+  useEffect(() => {
+    elementOnScrollObserver('.skills-icons-container', 'square-animation');
+  }, [])
+
   return (
-    <div className="skills-container">
-      <div className="skills-header"> KEY SKILLS </div>
-      <div>
+    <div className="skills-container">      
+      <SectionHeadingText title='KEY SKILLS' />
+      <div className='skills-logo-container'>
         <img className='skills-logo' src={skillsLogo} alt='Skills Logo' />
       </div>
       

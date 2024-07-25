@@ -25,7 +25,7 @@ export const ThemeContextProvider = ({ children }) => {
     palette: {
       mode: isDarkTheme ? 'dark' : 'light',
       primary: {
-        main: '#7B4B94',
+        main: '#6b33ae',
         contrastText: '#FFFFFF',
         light: '#E2D3EA',
       },

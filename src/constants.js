@@ -1,5 +1,5 @@
 export const ABOUT_ME = {
-    HEADING: `Hey there! I'm Jayanth R, a passionate frontend developer with a flair for transforming ideas into interactive digital experiences. With a strong foundation in HTML, CSS, and JavaScript, I specialize in crafting seamless and responsive web applications that not only look great but also provide an intuitive user experience.`,
+    HEADING: `Hey there! I'm a passionate frontend developer with a flair for transforming ideas into interactive digital experiences. With a strong foundation in HTML, CSS, and JavaScript, I specialize in crafting seamless and responsive web applications that not only look great but also provide an intuitive user experience.`,
     EXPERIENCE: 'My journey into the world of web development began 8 years ago, driven by a curiosity to understand the magic behind the web pages we interact with daily.',
     ROLE: 'I thrive on solving complex problems and am always eager to embrace new technologies and methodologies to stay ahead in this ever-evolving field. Whether it’s bringing a static design to life or optimizing performance for the best user experience, I approach each project with creativity, enthusiasm, and a commitment to excellence.'
 }
