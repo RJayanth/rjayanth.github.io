@@ -4,6 +4,7 @@ import DarkModeToggle from '../../commons/DarkModeToggle';
 import AboutMeComponent from '../../components/AboutMeComponent';
 import ProjectsComponent from '../../components/ProjectsComponent';
 import WorkExperienceComponent from '../../components/WorkExperienceComponent';
+import FooterComponent from '../../components/FooterComponent';
 
 const Dashboard = () => {
   return (
@@ -13,6 +14,7 @@ const Dashboard = () => {
       <SkillsComponent />
       <WorkExperienceComponent />
       <ProjectsComponent />
+      <FooterComponent />
     </div>
   );
 };
