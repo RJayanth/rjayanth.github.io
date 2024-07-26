@@ -31,7 +31,7 @@ const FileDownload = () => {
 
   return (
     <div className="resume-download" onClick={throttledDownload}>
-      <span className="resume-text">DOWNLOAD </span>
+      <span className="resume-text">RESUME</span>
       <CloudDownloadIcon />
     </div>
   );

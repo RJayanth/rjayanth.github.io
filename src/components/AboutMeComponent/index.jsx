@@ -12,7 +12,8 @@ const AboutMeComponent = () => {
         <div className={`about-me-container ${isDarkTheme ? 'am-dark' : 'am-light'}`}>
             <DisplayPicture />
             <div className="section-main-heading-text">Jayanth R</div>
-            <SectionHeadingText title='about me' />
+            <div className="circle-shadow"></div>
+            <SectionHeadingText title='about me' customClassName='about-me-heading' />
             <div className="am-description-container">
                 <p className="am-desc">{ABOUT_ME.HEADING}</p>
                 <p className="am-desc">{ABOUT_ME.EXPERIENCE}</p>

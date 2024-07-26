@@ -3,11 +3,18 @@
   flex-direction: column;
   margin: 24px 24px;
   padding: 5% 5%;
+  align-items: center;
 
-  .am-heading {
-    font-size: 24px;
-    text-decoration: underline;
-    font-weight: 900;
+  .circle-shadow {
+    width: 150px;
+    height: 10px;
+    border-radius: 100%;
+    opacity: 0.5;
+    margin-bottom: 32px;
+  }
+
+  .about-me-heading {
+    align-self: flex-start;
   }
 
   .am-description-container {
@@ -19,8 +26,18 @@
 
 .am-dark {
   box-shadow: rgb(244 244 245 / 25%) 0px 1px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  .circle-shadow {
+    background-color: #fefefe70;
+    box-shadow: rgba(244, 244, 245, 0.25) 0px 1px 12px -2px, rgba(0, 0, 0, 0.3) 0px 11px 4px 9px;
+  }
 }
 
 .am-light {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  .circle-shadow {
+    background-color: #08000091;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px 3px;
+  }
 }
