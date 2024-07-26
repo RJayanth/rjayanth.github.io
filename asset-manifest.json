@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.b06cb55e.css",
-    "main.js": "/static/js/main.13e66091.js",
+    "main.css": "/static/css/main.5aec9df2.css",
+    "main.js": "/static/js/main.86f8f627.js",
     "static/js/453.41811d64.chunk.js": "/static/js/453.41811d64.chunk.js",
     "static/media/displayPicture.jpg": "/static/media/displayPicture.590eba21f5e0d78f90e3.jpg",
     "static/media/CreditsBulbFinal.jpg": "/static/media/CreditsBulbFinal.a26110d4090bdd57a52c.jpg",
     "static/media/skillsLogo.png": "/static/media/skillsLogo.404346f8e2edb358dc17.png",
     "static/media/ThankYouEveryone.jpg": "/static/media/ThankYouEveryone.d1ff40ecd3c20e50c643.jpg",
+    "static/media/IBM.png": "/static/media/IBM.cfa15161ce878f34f6f7.png",
     "static/media/htmlIconDark.svg": "/static/media/htmlIconDark.752204791fcf16d96a859f0964928157.svg",
     "static/media/htmlIcon.svg": "/static/media/htmlIcon.523c2feae3d3bc420035d01687c3fcac.svg",
     "static/media/cssIconDark.svg": "/static/media/cssIconDark.e96cb3ff61db9bcf133b73229bb245a1.svg",
@@ -25,12 +26,12 @@
     "static/media/bitbucket.svg": "/static/media/bitbucket.2e54ce1a8616b9ee1f01ce8edd57d0f1.svg",
     "static/media/jsIcon.svg": "/static/media/jsIcon.68d2b07b5686f988c715450a238644f8.svg",
     "static/media/mui.svg": "/static/media/mui.6c3b568aae707be18ca2287a016656ca.svg",
-    "main.b06cb55e.css.map": "/static/css/main.b06cb55e.css.map",
-    "main.13e66091.js.map": "/static/js/main.13e66091.js.map",
+    "main.5aec9df2.css.map": "/static/css/main.5aec9df2.css.map",
+    "main.86f8f627.js.map": "/static/js/main.86f8f627.js.map",
     "453.41811d64.chunk.js.map": "/static/js/453.41811d64.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b06cb55e.css",
-    "static/js/main.13e66091.js"
+    "static/css/main.5aec9df2.css",
+    "static/js/main.86f8f627.js"
   ]
 }
