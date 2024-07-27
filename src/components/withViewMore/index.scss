@@ -1,0 +1,10 @@
+.view-more-container {
+    display: flex;
+    flex-direction: column;
+
+    .view-more-button {
+        display: flex;
+        align-items: center;
+        align-self: center;
+    }
+}
