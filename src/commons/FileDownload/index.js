@@ -2,7 +2,7 @@ import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 
 import './index.css';
 
-const FileDownload = () => {
+const FileDownload = ({title, fileName, path}) => {
   const throttleFn = (fn, delay) => {
     let invokeFn = true;;
     return function(...args) {
@@ -18,10 +18,10 @@ const FileDownload = () => {
   };
 
   const handleDownload = () => {
-    const filePath = `${process.env.PUBLIC_URL}/Jayanth_R_Resume.pdf`;
+    const filePath = `${process.env.PUBLIC_URL}/${path}`;
     const link = document.createElement('a');
     link.href = filePath;
-    link.download = 'Jayanth_R_Resume.pdf';
+    link.download = fileName;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -31,7 +31,7 @@ const FileDownload = () => {
 
   return (
     <div className="resume-download" onClick={throttledDownload}>
-      <span className="resume-text">RESUME</span>
+      <span className="resume-text">{title}</span>
       <CloudDownloadIcon />
     </div>
   );
