@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import LaunchingSoon from './components/LaunchingSoon/LaunchingSoon';
-import './App.css';
+import './App.scss';
 import CreditsComponent from './components/CreditsComponent/CreditsComponent';
 import ThankYouComponent from './components/ThankYouComponent/ThankYouComponent';
 import { ContactMeComponent } from './components/ContactMeComponent/ContactMeComponent';

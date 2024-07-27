@@ -15,7 +15,7 @@
       border-radius: 5px;
       padding: 8px;
       margin: 16px;
-      padding: 16px;
+      padding: 32px;
 
       .ec-header {
         display: flex;
@@ -57,6 +57,12 @@
   }
 }
 
+@media (max-width: 767px) {
+  .experience-container {
+    margin-top: 32px;
+  }
+}
+
 .ec-container-dark {
     .experience-card {
         box-shadow: rgba(246 239 239 / 56%) 0px 1px 6px 0px;
@@ -65,6 +71,6 @@
 
 .ec-container-light {
     .experience-card {
-        box-shadow: rgb(0 0 0 / 73%) 0px 1px 4px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     }
 }

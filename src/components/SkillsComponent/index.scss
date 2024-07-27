@@ -1,3 +1,5 @@
+@import '../../_mixins.scss';
+
 .skills-container {
   display: flex;
   flex-direction: column;
@@ -20,8 +22,6 @@
     flex-wrap: wrap;
 
     .skills-icon {
-      height: 100px;
-      width: 100px;
       border-radius: 5px;
       margin: 8px;
     }
@@ -57,5 +57,12 @@
         font-size: 12px;
       }
     }
+  }
+
+  @include respond-to('mobile') {
+      .skills-icon {
+        height: 50px;
+        width: 50px;
+      }
   }
 }
