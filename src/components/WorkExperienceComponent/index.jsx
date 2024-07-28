@@ -5,18 +5,25 @@ import { WORK_EXPERIENCE } from '../../constants';
 
 import './index.scss';
 import { useThemeContext } from '../../themes';
+import { useEffect } from 'react';
+import { elementOnScrollObserver } from '../../utils';
 
 const WorkExperienceComponent = () => {
   const { isDarkTheme } = useThemeContext();
+  useEffect(() => {
+    elementOnScrollObserver('.ec-ibm', ['animated', 'rollIn']);
+    elementOnScrollObserver('.ec-cerner', ['animated', 'slideInUp']);
+  }, []);
   const ExperienceCard = ({
     companyName,
     companyLogo,
     employmentPeriod,
     overview,
     keyResponsibilities,
+    customClassName=''
   }) => {
     return (
-      <div className="experience-card">
+      <div className={`experience-card ${customClassName}`}>
         <div className="ec-header">
           <img src={companyLogo} alt={companyName} className="ec-header-icon" />
           <h3>{employmentPeriod}</h3>
@@ -45,6 +52,7 @@ const WorkExperienceComponent = () => {
           employmentPeriod="May 2022 - Present"
           overview={WORK_EXPERIENCE.IBM.OVERVIEW}
           keyResponsibilities={WORK_EXPERIENCE.IBM.RESPONSIBILITIES}
+          customClassName='ec-ibm'
         />
         <ExperienceCard
           companyName="Oracle Cerner"
@@ -52,6 +60,7 @@ const WorkExperienceComponent = () => {
           employmentPeriod="Jul 2016 - April 2022"
           overview={WORK_EXPERIENCE.CERNER.OVERVIEW}
           keyResponsibilities={WORK_EXPERIENCE.CERNER.RESPONSIBILITIES}
+          customClassName='ec-cerner'
         />
       </div>
     </div>

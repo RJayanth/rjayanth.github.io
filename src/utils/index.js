@@ -10,7 +10,11 @@ export const elementOnScrollObserver = (elementToObserve, animationClass) => {
       // If the element is visible
       if (entry.isIntersecting) {
         // Add the animation class
-        entry.target.classList.add(animationClass);
+        if (Array.isArray(animationClass)) {
+          animationClass.forEach(a => entry.target.classList.add(a));
+        } else {
+          entry.target.classList.add(animationClass);
+        }
       }
     });
   });

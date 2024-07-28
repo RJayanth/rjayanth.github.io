@@ -1,10 +1,15 @@
+import { useEffect } from 'react';
 import './index.scss';
+import { elementOnScrollObserver } from '../../utils';
 
 const FooterComponent = () => {
-
-  const LetsConnect = () => {
+  const LetsConnect = ({customClass}) => {
+    useEffect(() => {
+      elementOnScrollObserver('.lets-connect', ['animated', 'bounceInLeft']);
+      elementOnScrollObserver('.social-media-icons', ['animated', 'bounceInRight']);
+    }, []);
     return (
-      <div id="box">
+      <div id='box' className={customClass}>
         <p id="flashlight">
           <span id="flash">Let's</span>
           <span id="light">Connect</span>
@@ -27,7 +32,7 @@ const FooterComponent = () => {
       </div>
       <div className="footer-content">
         <div className='social-media-container'>
-          <LetsConnect />
+          <LetsConnect customClass="lets-connect" />
           <div className='social-media-icons'>
           <div className='social-media-icon'>
                 <a href="https://www.linkedin.com/in/jayanth-rajanna/"> <i className="fa fa-linkedin fa-3x"></i> </a>

@@ -1,4 +1,5 @@
 import './App.scss';
+import './animate.css';
 import Dashboard from './Pages/Dashboard';
 import Loader from './commons/Loader';
 import { useEffect, useState } from 'react';
