@@ -37,3 +37,10 @@ export const WORK_EXPERIENCE = {
   },
   
 };
+
+export const PROJECTS = {
+  PEGIT: 'ALCM is a startup located in South Africa that mainly focuses on home improvement systems. This product is similar to UrbanClap. We connect homeowners with service providers such as electricians and plumbers, enabling them to fulfill their requirements. We developed this project from scratch, and it was an MVP.',
+  ORDER_MANAGEMENT: 'A comprehensive order management tool with options to Manage, Update, and view History for orders and upload necessary documents of the order. I faced a challenge in this project. Multiple instances of the tab were conflicting with data across tabs, leading to data mismatches. I resolved this by maintaining a separate data pattern inside Redux to avoid any conflicting data across tabs within the application.',
+  CHATODPEDIA: 'This project establishes real-time communication between users primarily using Socket.io. This project includes features such as allowing users to select their avatars during login, displaying a list of users post-login, filtering available users based on their preferences, and sending one-on-one private messages. Presently, this project is a work in progress. Additionally, it is a Progressive Web App (PWA), enabling users to install the app and access it without needing to visit the browser and enter the URL each time.',
+  UNIT_TEST_GENERATOR: 'This project focuses on generating unit test skeletons for JavaScript source files. It offers several features, allowing users to utilize both a Command Line Interface (CLI) and a Graphical User Interface (GUI) for generating test files. Using the CLI, users can generate tests for a single file, for all files, or for all files with the option to skip specific files by providing an additional skip property. The GUI provides functionality to generate test files for either a single file or all files.',
+}
