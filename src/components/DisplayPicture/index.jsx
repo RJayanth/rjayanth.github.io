@@ -4,7 +4,7 @@ import './index.scss';
 const DisplayPicture = () => {
     return (
         <div className="display-pic-container">
-            <img src={displayPicture} alt="Failed to load the picture" className='dp-icon' />
+            <img src={displayPicture} alt="My Profile" className='dp-icon' />
         </div>
     )
 }

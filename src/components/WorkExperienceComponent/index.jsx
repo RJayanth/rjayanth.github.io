@@ -26,8 +26,8 @@ const WorkExperienceComponent = () => {
           <p className='overview-text'>{overview}</p>
           <span className="ec-body-heading">Key Responsibilities: </span>
           <ul>
-            {keyResponsibilities.map((r) => (
-              <li>{r}</li>
+            {keyResponsibilities.map((r, i) => (
+              <li key={i}>{r}</li>
             ))}
           </ul>
         </div>
