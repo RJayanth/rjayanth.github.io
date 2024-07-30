@@ -32,7 +32,7 @@ const AboutMeComponent = () => {
                 <p className="am-desc">{ABOUT_ME.HEADING}</p>
                 {isMobileView ? <AdditionalSectionMobileView /> : <AdditionalSection />}
             </div>
-            <FileDownload title='Resume' fileName='Jayanth_R_Resume' path='Jayanth_R_Resume' />
+            <FileDownload title='Resume' fileName='Jayanth_R_Resume' path='Jayanth_R_Resume.pdf' />
         </div>
     )
 }
