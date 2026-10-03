@@ -21,3 +21,19 @@ export const elementOnScrollObserver = (elementToObserve, animationClass) => {
 
   observer.observe(document.querySelector(elementToObserve));
 };
+
+export const getYearsOfExperience = (startYear, startMonth) => {
+  const now = new Date();
+  const currentYear = now.getFullYear();
+  const currentMonth = now.getMonth() + 1; // 1-indexed (January is 1)
+  
+  let years = currentYear - startYear;
+  
+  // If the current month is before your start month, you haven't completed that full year yet
+  if (currentMonth < startMonth) {
+    years--;
+  }
+  
+  return years + "+"; // Outputs "10+" as of July 2026 onwards
+}
+
