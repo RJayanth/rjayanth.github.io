@@ -1,10 +1,28 @@
-import { getYearsOfExperience } from "./utils";
+import { getYearsOfExperience } from './utils';
+
+const yearsOfExperience = getYearsOfExperience(2016, 7);
 
 export const ABOUT_ME = {
-  HEADING: `Hey there! I'm a passionate Senior Front-End Developer with over ${getYearsOfExperience(2016, 7)} years of experience turning complex challenges into seamless, high-performance web applications.`,
+  HEADING: (
+    <>
+      Hey there! I'm a passionate Senior Front-End Developer with over{' '}
+      <span className="stat-highlight">{yearsOfExperience} years</span> of
+      experience turning complex challenges into seamless, high-performance web
+      applications.
+    </>
+  ),
   EXPERIENCE:
     'Specializing in React, Angular, Microfrontends, and modern state architectures, I bridge the gap between complex design systems and high-efficiency browser execution. I have a proven track record of taking enterprise platforms from zero to production, implementing responsive web design across viewports, and building isolated multi-tab architectures.',
-  ROLE: `I thrive on solving intricate problems—whether it's optimizing Core Web Vitals from 30% to 75%, enforcing accessibility standards, or embedding custom AI workflows to elevate code quality. I approach each project with technical rigor, creativity, and a commitment to engineering excellence.`,
+  ROLE: (
+    <>
+      My engineering philosophy centers on measurable impact: slashing load
+      times by <span className="stat-highlight">50%</span> and boosting
+      Lighthouse metrics from <span className="stat-highlight">30% to 75%</span>
+      . Whether it's optimizing Core Web Vitals or integrating custom AI-driven
+      code quality agents, I approach every project with creative
+      problem-solving and technical rigor.
+    </>
+  ),
 };
 
 export const WORK_EXPERIENCE = {
@@ -50,5 +68,3 @@ export const PROJECTS = {
   UNIT_TEST_GENERATOR:
     'This project focuses on generating unit test skeletons for JavaScript source files. It offers several features, allowing users to utilize both a Command Line Interface (CLI) and a Graphical User Interface (GUI) for generating test files. Using the CLI, users can generate tests for a single file, for all files, or for all files with the option to skip specific files by providing an additional skip property. The GUI provides functionality to generate test files for either a single file or all files.',
 };
-
-

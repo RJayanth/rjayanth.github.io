@@ -19,8 +19,23 @@
 
   .am-description-container {
     .am-desc {
-        margin: 12px 0;
+      margin: 12px 0;
+      line-height: 1.7;
     }
+
+    .stat-highlight {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      border: 1px solid rgba(251, 191, 36, 0.5);
+      background: #e1b852;
+      color: #111827;
+      transform: translateY(-1px);
+      box-shadow: 0 0 0 1px rgba(251, 191, 36, 0.15);
+    }
+
     margin-bottom: 16px;
   }
 }
@@ -32,6 +47,12 @@
     background-color: #fefefe70;
     box-shadow: rgba(244, 244, 245, 0.25) 0px 1px 12px -2px, rgba(0, 0, 0, 0.3) 0px 11px 4px 9px;
   }
+
+  .stat-highlight {
+    border-color: rgba(251, 191, 36, 0.8);
+    background: #fbbf24;
+    color: #111827;
+  }
 }
 
 .am-light {
@@ -40,5 +61,11 @@
   .circle-shadow {
     background-color: #08000091;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px 3px;
+  }
+
+  .stat-highlight {
+    border-color: rgba(251, 191, 36, 0.7);
+    background: #fbbf24;
+    color: #111827;
   }
 }
