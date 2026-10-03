@@ -1,0 +1,218 @@
+.key-impact-section {
+  width: 100%;
+  max-width: 1280px;
+  padding: 16px 24px 32px;
+  box-sizing: border-box;
+
+  .key-impact-heading {
+    margin-bottom: 28px;
+  }
+
+  .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+  }
+
+  .impact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 320px;
+    padding: 24px 20px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  .impact-card-content {
+    width: 100%;
+    text-align: center;
+
+    h3 {
+      margin: 16px 0 10px;
+      font-size: 1rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.6;
+      font-size: 0.96rem;
+    }
+  }
+
+  .impact-ring-wrap {
+    position: relative;
+    width: 210px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .impact-ring {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+    overflow: visible;
+  }
+
+  .impact-ring-track {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke: rgba(148, 163, 184, 0.18);
+  }
+
+  .impact-ring-progress {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dasharray: 326.72;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.8s ease;
+    filter: drop-shadow(0 0 8px rgba(52, 211, 153, 0.2));
+  }
+
+  .impact-ring-green {
+    stroke: #34d399;
+  }
+
+  .impact-ring-amber {
+    stroke: #fbbf24;
+  }
+
+  .impact-ring-value {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 18px;
+    font-weight: 700;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+  }
+
+  .impact-arrow {
+    opacity: 0.8;
+  }
+
+  .impact-card-milestone {
+    justify-content: center;
+  }
+
+  .impact-milestone-path {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    margin: 18px 0 8px;
+    font-weight: 800;
+    font-size: 1.4rem;
+    letter-spacing: 0.02em;
+  }
+
+  .impact-milestone-before {
+    color: #f59e0b;
+  }
+
+  .impact-milestone-after {
+    color: #34d399;
+  }
+
+  .impact-milestone-line {
+    flex: 1;
+    min-width: 38px;
+    max-width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(245, 158, 11, 0.75), rgba(52, 211, 153, 0.9));
+    border-radius: 999px;
+  }
+
+  @media (max-width: 1024px) {
+    .impact-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 700px) {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    .impact-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .impact-card {
+      min-height: auto;
+      padding: 18px 16px;
+    }
+
+    .impact-ring-wrap {
+      width: 170px;
+      height: 170px;
+      padding: 14px;
+    }
+
+    .impact-ring-value {
+      font-size: 0.75rem;
+      gap: 6px;
+      padding: 0 8px;
+    }
+  }
+}
+
+.ki-dark {
+  .impact-card {
+    background: rgba(17, 24, 39, 0.72);
+    border-color: rgba(148, 163, 184, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 10px 20px;
+  }
+
+  .impact-card-content {
+    h3 {
+      color: #f8fafc;
+    }
+
+    p {
+      color: rgba(226, 232, 240, 0.9);
+    }
+  }
+}
+
+.ki-light {
+  .impact-card {
+    background: rgba(255, 255, 255, 0.65);
+    border-color: rgba(148, 163, 184, 0.25);
+    box-shadow: rgba(15, 23, 42, 0.08) 0px 12px 24px;
+  }
+
+  .impact-card-content {
+    h3 {
+      color: #0f172a;
+    }
+
+    p {
+      color: #334155;
+    }
+  }
+
+  .impact-ring-track {
+    stroke: rgba(15, 23, 42, 0.1);
+  }
+}
