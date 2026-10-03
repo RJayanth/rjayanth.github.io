@@ -16,11 +16,11 @@ export const ABOUT_ME = {
   ROLE: (
     <>
       My engineering philosophy centers on measurable impact: slashing load
-      times by <span className="stat-highlight">50%</span> and boosting
-      Lighthouse metrics from <span className="stat-highlight">30% to 75%</span>
-      . Whether it's optimizing Core Web Vitals or integrating custom AI-driven
-      code quality agents, I approach every project with creative
-      problem-solving and technical rigor.
+      times by 50% and boosting Lighthouse metrics from{' '}
+      <span className="stat-highlight">30% to 75%</span>. Whether it's
+      optimizing Core Web Vitals or integrating custom AI-driven code quality
+      agents, I approach every project with creative problem-solving and
+      technical rigor.
     </>
   ),
 };
