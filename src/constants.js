@@ -28,32 +28,28 @@ export const ABOUT_ME = {
 export const WORK_EXPERIENCE = {
   IBM: {
     OVERVIEW:
-      'Responsible for developing UI components, with experience across multiple domains including supply chain, healthcare, and home services akin to UrbanClap. All projects I have worked on were developed from scratch.',
+      'Senior Front-End Developer with experience delivering enterprise portal solutions and scalable UI systems across healthcare and supply chain domains. Worked across new product builds from the ground up and modernization efforts, translating business requirements into production-ready, high-impact web experiences.',
     RESPONSIBILITIES: [
-      'Developing user interface components',
-      'Mentoring junior engineers',
-      'Participating in peer code reviews',
-      'Code repository ownership',
-      'Managing deployment activities',
-      'Participating in cross-team communications',
-      'Interacting with various stakeholders',
-      'Breaking down user stories and contributing to roadmaps',
-      'Actively participating in all Agile ceremonies',
+      'Led front-end architecture and development for enterprise portal solutions in healthcare and supply chain domains',
+      'Improved application performance and Lighthouse scores through targeted optimization of bundle size, rendering patterns, and front-end architecture',
+      'Delivered new product builds from the ground up while also supporting modernization efforts',
+      'Converted Figma designs and product requirements into modular, reusable interfaces',
+      'Built browser-like multi-tab workspaces with isolated state patterns to prevent data collisions',
+      'Mentored junior engineers and contributed to Agile delivery, code quality, and team collaboration',
+      'Partnered with stakeholders and cross-functional teams to shape requirements and delivery priorities',
+      'Participated in peer reviews, technical discussions, and Agile ceremonies',
     ],
   },
   CERNER: {
     OVERVIEW:
-      'Responsible for developing user interface components, with experience in the healthcare domain.',
+      'Front-End Developer with experience building healthcare-focused user interfaces and enterprise web applications. Contributed to responsive UI development, requirement analysis, and defect resolution in a collaborative Agile environment.',
     RESPONSIBILITIES: [
-      'Developing user interface components',
-      'Fixing bugs',
-      'Participating in peer code reviews',
-      'Reviewing requirements and change requests',
-      'Participating in Root Cause Analysis (RCA) meetings',
-      'Participating in  cross-team communication',
-      'Interacting with various stakeholders',
-      'Breaking down user stories and contributing to roadmaps',
-      'Actively participating in all Agile ceremonies',
+      'Developed and maintained healthcare web application interfaces and reusable UI components',
+      'Reviewed requirements and change requests to translate business needs into user-facing solutions',
+      'Resolved defects and participated in root cause analysis discussions',
+      'Collaborated with cross-functional teams to align feature delivery with stakeholder needs',
+      'Participated in peer reviews, technical discussions, and Agile ceremonies',
+      'Supported requirement breakdown and contributed to roadmap planning activities',
     ],
   },
 };
