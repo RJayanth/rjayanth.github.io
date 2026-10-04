@@ -26,7 +26,7 @@ const WorkExperienceComponent = () => {
       <div className={`experience-card ${customClassName}`}>
         <div className="ec-header">
           <img src={companyLogo} alt={companyName} className="ec-header-icon" />
-          <h3>{employmentPeriod}</h3>
+          <h3 className="ec-period">{employmentPeriod}</h3>
         </div>
         <div className="ec-body">
           <span className="ec-body-heading">Overview: </span>

@@ -28,9 +28,19 @@
           max-width: 200px;
           max-height: 100px;
         }
+
+        .ec-period {
+          margin: 0;
+          font-size: 0.95rem;
+          font-weight: 600;
+          line-height: 1.5;
+          white-space: nowrap;
+          letter-spacing: 0.02em;
+        }
       }
 
       .ec-body {
+        padding-top: 16px;
         .ec-body-heading {
           font-size: 16px;
           font-weight: 600;
