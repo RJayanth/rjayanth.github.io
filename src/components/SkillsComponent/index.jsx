@@ -3,6 +3,7 @@ import { useThemeContext } from '../../themes';
 import { elementOnScrollObserver } from '../../utils';
 import SectionHeadingText from '../../commons/SectionHeadingText';
 import { primarySkills, secondarySkills } from './skillIcons';
+import skillsLogo from '../../assets/images/skillsLogo.png';
 
 import './index.scss';
 
@@ -34,6 +35,10 @@ const SkillsComponent = () => {
   return (
     <div className="skills-container">
       <SectionHeadingText title="KEY SKILLS" />
+
+      <div className="skills-logo-container">
+        <img className="skills-logo" src={skillsLogo} alt="Skills illustration" />
+      </div>
 
       <div className="skills-cards">
         {renderSkillCard('Primary Stack', primarySkills)}

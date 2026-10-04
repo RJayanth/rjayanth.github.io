@@ -8,6 +8,19 @@
   width: 100%;
   padding: 24px 0 40px;
 
+  .skills-logo-container {
+    margin: 16px 0;
+    display: flex;
+    justify-content: center;
+
+    .skills-logo {
+      width: min(520px, 72vw);
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
   .skills-cards {
     width: min(1100px, calc(100% - 32px));
     display: grid;
