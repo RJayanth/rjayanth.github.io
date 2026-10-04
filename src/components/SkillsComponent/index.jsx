@@ -9,6 +9,7 @@ import './index.scss';
 
 const SkillsComponent = () => {
   const { isDarkTheme } = useThemeContext();
+  const foundationalTools = ['HTML', 'CSS', 'SCSS', 'Git', 'Bitbucket', 'Webpack', 'Material UI'];
 
   useEffect(() => {
     elementOnScrollObserver('.skill-tile', 'square-animation');
@@ -43,6 +44,17 @@ const SkillsComponent = () => {
       <div className="skills-cards">
         {renderSkillCard('Primary Stack', primarySkills)}
         {renderSkillCard('Secondary Stack', secondarySkills)}
+      </div>
+
+      <div className="skills-foundation">
+        <div className="skills-foundation__header">Frontend foundations &amp; tooling</div>
+        <div className="skills-foundation__row">
+          {foundationalTools.map((tool) => (
+            <span className="skills-foundation__pill" key={tool}>
+              {tool}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
